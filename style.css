@@ -110,11 +110,15 @@ h1{
     padding: .7em 1em;
 }
 .hero-section_image{
+    align-self: center;
+}
+.hero-section_image > div{
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: fit-content;
+    border: 1px solid red;
 }
 .hero-section_image img{
     position: relative;
@@ -124,9 +128,10 @@ h1{
     width: 14.2rem;
     height: auto;
 }
-.hero-section_image > div{
-    width: 14.2rem;
-    height: 14.2rem;
+.hero-section_image > div > div{
+    /* width: 14.2rem; */
+    width: 100%;
+    height: 100%;
     top: 56%;
     left: 46%;
     position: absolute;
