@@ -28,13 +28,21 @@ img{
 ul,ol{
     list-style-type: none;
 }
-.container{
-    width: 90%;
+.container_large{
+    width: 94%;
+    margin-inline: auto;
     max-width: 68.75rem;
+}
+.container_medium{
+    width: 94%;
+    margin-inline: auto;
+    max-width: 56.25rem;
 }
 
 header{
-    position: relative;
+    position: sticky;
+    top: 0;
+    background-color: var(--primary);
     /* border: 1px solid red; */
     height: 14dvh;
     display: flex;
@@ -73,7 +81,8 @@ nav{
 .hero-section{
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 h1{
     font-size: clamp(1.4rem, 1.13rem + 1.728vw, 2.75rem);
@@ -102,10 +111,15 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 .hero-section_image img{
     position: relative;
     z-index: 10;
+    width: 100%;
+    height: auto;
+    width: 14.2rem;
+    height: auto;
 }
 .hero-section_image > div{
     width: 14.2rem;
@@ -130,5 +144,9 @@ h1{
         flex-direction: row;
         justify-content: right;
         background-color: var(--primary);
+    }
+    .hero-section{
+        flex-direction: row;
+        gap: 3rem;
     }
 }
